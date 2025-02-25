@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magret</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            padding: 30px;
+            border: 2px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        h5 {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        h5:before,
+        h5:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid #000;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="form-container">
+    Already have an account? <a href="signin.html" >Signin</a>
+    <h1>Sign up</h1>
+    <form action="signin.html">
+        <label for ="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname" required ><br>
+        <label for ="lname">Email</label><br>
+        <input type="email" id="lname" name="email" required><br>
+        <label for ="pass">Password</label><br>
+        <input type="text" id="pass" name="password" required><br><br>
+        <input type="checkbox" id="agree" name="acc.agrre">
+        <label for="agree" aria-required="true">i have read and accept with terms of service and our privacy policy</label>
+        <br><br><br>
+        <button type="submit" style="background-color: black; color: #f9f9f9;">sign up</button>
+        <h5 >or sign in with </h5>
+    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F%3Fauthuser%3D0&ec=GAlAmgQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S137806270%3A1740465927533623&ddm=1">
+        <img src="image/google.png" alt="google" height="60" width="50" align:middle>
+    </a>
+    <a href="https://www.facebook.com/login.php/">
+        <img align:middle; src="image/facebook-new.png"alt="facebook"height="55" width="50">
+    </a>
+    </form>
+</div>
+
+</body>
+</html>
