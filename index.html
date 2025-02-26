@@ -31,6 +31,29 @@
             border-bottom: 2px solid #000;
             margin: auto;
         }
+        #submit_button{
+            padding: 12px 8px;
+            background: none;
+            background-color: black;
+            color: white;
+            margin: 0 auto;
+            width: 90%;
+            border: none;
+            border-radius: none;
+            cursor: pointer;
+        }
+        #name{
+            padding: 12px 8px;
+            width: 85%;
+        }
+        #email{
+            padding: 12px 8px;
+            width: 85%;
+        }
+        #password{
+            padding: 12px 8px;
+            width: 85%;
+        }
         
     </style>
 </head>
@@ -42,22 +65,29 @@
         <p>Don't have an account? <a href="signup.html" >Sign up</a></p>
         <h1>Sign in</h1>
         <form action="table.html">
-            <label for ="lname">Email</label><br>
-            <input type="email" id="lname" name="email" required><br>
+            <label for ="email">Email</label><br>
+            <br>
+            <input type=" email" id="email"placehorder="Enter email"></br>
+            <br>
             <label for ="pass">Password</label><br>
-            <input type="password" id="pass" name="password" required><br><br>
-            <input type="checkbox" id="agree" name="acc.agrre" required>
-            <label for="agree" aria-required="true">i have read and accept with terms of service and our privacy policy</label>
+            <br>
+            <input type="password" id="password" placehorder="Enter password"></br>
+            <br>
+            <input type="checkbox" id="agree">
+            <label for="agree" aria-required="true">I Have Read And Agree With Terms Of Service And Our Privacy Policy</label>
+            <br>
             <br><br><br>
-            <button type="submit" style="background-color: black; color: #f9f9f9;">sign in</button>
+            <br>
+            <button type="submit" id="submit_button" style="background-color: black; color: #f9f9f9;">sign in</button>
             <br>
         <h5 >or sign in with </h5>
-       
+       <br>
         <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F%3Fauthuser%3D0&ec=GAlAmgQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S137806270%3A1740465927533623&ddm=1">
-            <img src="image/google.png" alt="google" height="60" width="50">
-        </a>
+            <br>
+            <img src="image/google.png" alt="google" height="40" width="30"></a>
         <a href="https://www.facebook.com/login.php/">
-            <img src="image/facebook-new.png"alt="facebook"height="55" width="50"  text-align :center:>
+            <img src="image/facebook-new.png"alt="facebook"height="45" width="40"  text-align :center:>
+            <br>
         </a>
 
         </form>
